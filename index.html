@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cormorant' rel='stylesheet'>
+    <script src="nav.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF0000"/>
+    <link rel="apple-touch-icon" href="image/512px.png">
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                .then(reg => {
+                    console.log('Registered!', reg);
+                }).catch(err => {
+                    console.log('Registeration failed: ', err);
+                });
+            });
+        }
+    </script>
+</head>
+<style>
+</style>
+<body>
+    <div class="w3-blue w3-display-container" id="loader">
+        <img src="image/ESALlogo-03.png" alt="" class="w3-image w3-display-middle w3-animate-fading" style="width: 200px; margin-top: 40vh;">
+    </div>
+
+    <div class="w3-hide" id="loaded">
+        <!--Large Screens-->
+        <div class="w3-hide-medium w3-hide-small">
+            <!--Landing 1-->
+            <div id="landing-one" style="height: 1000px;">
+                <div class="w3-center w3-animate-left" id="logo-one" onclick="changeLanding()">
+                    <img src="image/ESALlogo-03.png" alt="logo" class="w3-image" style="width: 220px;">
+                </div>
+                <div class="w3-auto w3-display-container w3-hide-medium uk-animation-scale-down">
+                    <img src="image/satin_grey.png" alt="satin grey" class="w3-image" style="width: 100%; height: 526px;" >
+                    <img src="image/website_landing_scatter.png" alt="landing scatter" class="w3-image w3-display-middle">
+                    <p class="w3-display-left w3-col l3" style="margin-left: 15%; margin-top: -60px;">
+                        Encore is  a full-service Apparel Souring Agency offering fashion brands consulting expertise in 
+                    </p>
+                    <img src="image/merchandising_Image.png" class="w3-display-middle" style="width: 15%; margin-top: -30px;" alt="vector">
+                    <p class="w3-display-right w3-col l3" style="margin-right: 10%;">
+                        sourcing, <br> manufacturing & <br> Merchandising.
+                    </p>
+                    <img src="image/ESA_c-04_1.svg" alt="" class="w3-hide">
+                </div>
+            </div>
+            <!--Landing - 2-->
+            <div id="landing-two" class="w3-hide">
+                <div class="w3-row w3-left w3-animate-right w3-padding-32" id="logo-two" style="margin-left: 3vw;" onclick="changeLanding()">
+                    <img src="image/ESALlogo-03.png" alt="logo" class="w3-image" style="width: 220px;">
+                </div>
+                <div class="w3-row">
+                    <div class="w3-col l5 w3-bar-block">
+                        <div class="w3-right">
+                            <a href="who_we_are.html"><h1 class="w3-margin-top">WHO WE ARE</h1></a>
+                            <a href="how_we_work.html"><h1 class="w3-margin-top">HOW WE WORK</h1></a>
+                            <a href="what_we_offer.html"><h1 class="w3-margin-top">WHAT WE OFFER</h1></a>
+                            <a href="why_us.html"><h1 class="w3-margin-top">WHY US</h1></a>
+                            <a href="get_in_touch.html"><h1 class="w3-margin-top">GET IN TOUCH</h1></a>
+                        </div>
+                    </div>
+                    <div class="w3-col l5 w3-animate-right" style="margin-top: 20px; margin-left: 5%;">
+                        <img src="image/IMG_0708_2.PNG" class="w3-image" alt="picture">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Nav small screens-->
+        <nav class="w3-hide-large" id="w3-top">
+            <div class="w3-bar w3-padding-24">
+                <div class="w3-display-container w3-padding-32">
+                    <a class="w3-display-left" id="link_arrow" href="index.html"><img src="image/ESAL_Arrow.png" alt=""></a>
+                    <a class="w3-display-middle" id="link_logo"><img src="image/ESALlogo-03.png" alt=""></a>
+                    <a class="w3-display-right" id="link_circles" onclick="showNav()"><img src="image/ESAL_Menu.png"></a>
+                    <a class="w3-display-right" id="link_cross" onclick="showNav()"><img src="image/ESA_Cross.png"></a>
+                </div>
+            </div>
+
+            <div class="w3-bar-block w3-xlarge" style="height: 100vh; display: none;" id="collapsible_nav">
+                <ul class="w3-padding-24">
+                    <li><a href="who_we_are.html" class="w3-bar-item w3-padding-16 w3-center w3-large">WHO WE ARE</a></li>
+                    <li><a href="how_we_work.html" class="w3-bar-item w3-padding-16 w3-center w3-large">HOW WE WORK</a></li>
+                    <li><a href="what_we_offer.html" class="w3-bar-item w3-padding-16 w3-center w3-large">WHAT WE OFFER</a></li>
+                    <li><a href="why_us.html" class="w3-bar-item w3-padding-16 w3-center w3-large">WHY US</a></li>
+                    <li><a href="get_in_touch.html" class="w3-bar-item w3-padding-16 w3-center w3-large">GET IN TOUCH</a></li>
+                    <li><a class="w3-bar-item w3-padding-16 w3-center"><img src="image/IMG_0708_2.PNG" alt="img" style="width: 200px;"></a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="w3-auto w3-display-container w3-animate-top w3-hide-large" style="width: 90%; margin-top: 80px;">
+            <img src="image/satin_grey.png" alt="satin-grey" class="w3-image" style=" height: 900px;">
+            <img src="image/website_landing_scatter.png" alt="" class="w3-display-middle" style="height: 800px;">
+            <div class="w3-display-topmiddle w3-text-black" style="margin-top: 100px; width: 60%;">
+                <p class="w3-xlarge">Encore is a full-service Apparel Sourcing Agency offering fashion brands consulting brands consulting expertise in</p>
+                <p class="w3-xlarge w3-center" style="margin-top: 50px;">
+                    Sourcing, <br>
+                    manufacturing & <br>
+                    merchandising.
+                </p>
+            </div>
+            <div class="w3-display-bottomright" style="width:80%; max-width: 450px; padding-bottom: 40px;">
+                <img src="image/IMG_0726_2.PNG" alt="" class="w3-image">
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+window.onload = function () {
+    document.getElementById("loader").style.display = 'none';
+    document.getElementById("loaded").classList -= 'w3-hide';
+}
+
+document.body.onscroll = function() {changeLanding()};
+
+function changeLanding() {
+    var landing_one = document.getElementById("landing-one");
+    var landing_two = document.getElementById("landing-two");
+        landing_one.className = "w3-hide";
+        landing_two.className = "w3-show";
+}
+</script>
+</html>

@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET IN TOUCH</title>
+    <link rel="stylesheet" href="w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cormorant' rel='stylesheet'>
+    <script src="nav.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF0000"/>
+    <link rel="apple-touch-icon" href="image/512px.png">
+</head>
+<style>
+    .w3-button :hover{background-color: #b63e4c; cursor: url("image/black-circle.png"), auto !important;}
+</style>
+<body>
+    <div class="w3-blue w3-display-container" id="loader">
+        <img src="image/ESALlogo-03.png" alt="" class="w3-image w3-display-middle w3-animate-fading" style="width: 200px; margin-top: 40vh;">
+    </div>
+    <div class="w3-hide" id="loaded">
+        <!-- Navbar-->
+        <nav class="w3-bar w3-hide-small w3-hide-medium w3-top">
+            <ul>
+                <li class="w3-bar-item w3-margin-right w3-padding-32"><a href="index.html"><img src="image/ESALlogo-03.png" alt="logo" id="logo"></a></li>
+            </ul>
+            <ul>
+                <div class="w3-padding-48 w3-cream" style="height: 106px;">
+                    <li class="w3-margin-top w3-bar-item">
+                        <a href="who_we_are.html">WHO WE ARE</a>
+                    </li>
+                    <li class="w3-margin-top w3-bar-item">
+                        <a href="how_we_work.html">HOW WE WORK</a>
+                    </li>
+                    <li class="w3-margin-top w3-bar-item">
+                        <a href="what_we_offer.html">WHAT WE OFFER</a>
+                    </li>
+                    <li class="w3-margin-top w3-bar-item">
+                        <a href="why_us.html">WHY US</a>
+                    </li>
+                    <li class="w3-margin-top w3-bar-item" id="active">
+                        <a href="get_in_touch.html">GET IN TOUCH</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </nav>
+        <!--Nav small screens-->
+        <nav class="w3-hide-large" id="w3-top">
+            <div class="w3-bar w3-padding-24">
+                <div class="w3-display-container w3-padding-32">
+                    <a class="w3-display-left" id="link_arrow" href="index.html"><img src="image/ESAL_Arrow.png" alt=""></a>
+                    <a class="w3-display-middle" id="link_logo"><img src="image/ESALlogo-03.png" alt=""></a>
+                    <a class="w3-display-right" id="link_circles" onclick="showNav()"><img src="image/ESAL_Menu.png"></a>
+                    <a class="w3-display-right" id="link_cross" onclick="showNav()"><img src="image/ESA_Cross.png"></a>
+                </div>
+            </div>
+
+            <div class="w3-bar-block w3-xlarge" style="height: 100vh; display: none;" id="collapsible_nav">
+                <ul class="w3-padding-24">
+                    <li><a href="who_we_are.html" class="w3-bar-item w3-padding-16 w3-center">WHO WE ARE</a></li>
+                    <li><a href="how_we_work.html" class="w3-bar-item w3-padding-16 w3-center">HOW WE WORK</a></li>
+                    <li><a href="what_we_offer.html" class="w3-bar-item w3-padding-16 w3-center">WHAT WE OFFER</a></li>
+                    <li><a href="why_us.html" class="w3-bar-item w3-padding-16 w3-center">WHY US</a></li>
+                    <li><a href="get_in_touch.html" class="w3-bar-item w3-padding-16 w3-center">GET IN TOUCH</a></li>
+                    <li><a class="w3-bar-item w3-padding-16 w3-center"><img src="image/IMG_0708_2.PNG" alt="img" style="width: 200px;"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--Large Screens-->
+        <div class="w3-row w3-hide-medium w3-hide-small" style="margin-top: 200px; margin-left: -16px;">
+            <div class="w3-col l6 w3-container">
+                <img src="image/website-1 copy.jpg" alt="" class="w3-image">
+            </div>
+
+            <div class="w3-col l6 w3-container">
+                <div class="w3-row">
+                    <div class="w3-col w3-half" style="padding-left: 20px">
+                        <h6>Contact</h6>
+                        <p>+91 9810344866</p>
+                        <a href="mailto:mail@encoresourcing.com" style="font-family: 'Montserrat', sans-serif; font-size: 1rem;">encoresourcing.com</a>
+                    </div>
+                    <div class="w3-col w3-half" style="padding-left: 20px;">
+                        <h6>Address</h6>
+                        <p>M93, Sector 25 / jal Vayu <br> Vihar, Noida UP-201301 India</p>
+                    </div>
+                </div>
+
+                <div class="w3-row" style="padding-left: 20px; margin-top: 40px;">
+                    <h6>HAVE A QUESTION?</h6>
+                </div>
+
+                <form class="w3-container" action="https://airform.io/" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="w3-row" style="margin-top: 15px;">
+                        <div class="w3-col l6 s12 w3-left" style="padding-left: 10px; width: 40%;">
+                            <label>Name</label>
+                            <input class="w3-input w3-cream w3-bottombar-1 w3-border-black" type="text" name="Name">
+                        </div>
+                        <div class="w3-col l6 s12 w3-right" style="padding-right: 40px; width: 50%;">
+                            <label>Email Adress</label>
+                            <input class="w3-input w3-cream w3-bottombar-1 w3-border-black" type="text" name="Email">
+                        </div>
+                    </div>
+                    <div class=" w3-padding-24" style="padding-left: 10px; padding-right: 36px;">
+                        <label>Message</label>
+                        <textarea class="w3-input w3-cream w3-bottombar-1 w3-border-black" type="text" rows="4" cols="10" name="Message"></textarea>
+                    </div>
+                    <button class="w3-button w3-black w3-round-xlarge w3-large" style="width: 200px;">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!--Medium screens & Small screens-->
+        <div class="w3-hide-large">
+
+            <div class="w3-center-80 w3-margin-top-120">
+                <h2>GET IN TOUCH</h2>
+                <br>
+                <p>M93, Sector 25 / jal Vayu <br> Vihar, Noida UP-201301 India</p>
+                <br><br>
+                <p>+91 9810344866</p>
+                <a href="mailto:mail@encoresourcing.com" style="font-family: cormorant, serif; font-size: 1.2rem;">encoresourcing.com</a>
+            </div>
+
+            <div class="w3-padding-64">
+                <img src="image/website-1 copy.jpg" alt="" class="w3-image">
+            </div>
+
+            <div class="w3-center-80">
+                <h3 style="margin-left: 20px;">HAVE A QUESTION?</h3 style="margin-left: 25px;">
+
+                <form class="w3-container" action="https://airform.io/" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="w3-row" style="margin-top: 15px;">
+                        <div class="w3-col l6 m5 s12 w3- w3-left">
+                            <label>Name</label>
+                            <input class="w3-input w3-cream w3-bottombar-1 w3-border-black" type="text" name="Name">
+                        </div>
+                        <div class="w3-col l6 m5 s12 w3- w3-right">
+                            <label>Email Adress</label>
+                            <input class="w3-input w3-cream w3-bottombar-1 w3-border-black" type="text" name="Email">
+                        </div>
+                    </div>
+                    <div class=" w3-padding-24">
+                        <label>Message</label>
+                        <textarea class="w3-input w3-cream w3-bottombar-1 w3-border-black" type="text" rows="4" cols="10" name="Message"></textarea>
+                    </div>
+                    <button class="w3-button w3-black w3-round-xlarge w3-large w3-margin-bottom w3-right" style="width: 200px;">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="w3-animate-bottom w3-hide-medium w3-hide-small" style="margin-top: 80px;">
+            <div class="w3-row">
+                <div class="w3-half">
+                    <div class="w3-margin-right">
+                        <div class="w3-center">
+                            <p class="w3-large">Interested in collaborating?</p>
+                            <p class="w3-xxlarge" style="text-decoration: underline;">Get in touch</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-half">
+                    <div class="w3-margin-left">
+                        <div class="w3-center">
+                            <p class="w3-xxxlarge" style="margin-top: -20px;">encore</p>
+                            <p>sourcing agency limited</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script>
+window.onload = function () {
+    document.getElementById("loader").style.display = 'none';
+    document.getElementById("loaded").classList -= 'w3-hide';
+}
+</script>
+</html>

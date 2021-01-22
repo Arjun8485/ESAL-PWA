@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOW WE WORK</title>
+    <link rel="stylesheet" href="w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Cormorant' rel='stylesheet'>
+    <script src="nav.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#FF0000"/>
+    <link rel="apple-touch-icon" href="image/512px.png">
+</head>
+<style>
+h3:hover{
+font-style: italic;
+}
+.w3-animate-fading{animation:fading 2s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-left-80{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-80px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.w3-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.w3-animate-input{transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}
+body {
+animation:opac-long 3s
+}
+@keyframes opac-long{from{opacity:0} to{opacity:1}}
+</style>
+<body>
+    <div class="w3-blue w3-display-container" id="loader">
+        <img src="image/ESALlogo-03.png" alt="" class="w3-image w3-display-middle w3-animate-fading" style="width: 200px; margin-top: 40vh;">
+    </div>
+    <div class="w3-hide" id="loaded">
+        <!-- Navbar-->
+        <nav class="w3-bar w3-hide-small w3-hide-medium w3-top">
+            <ul>
+                <li class="w3-bar-item w3-margin-right w3-padding-32"><a href="index.html"><img src="image/ESALlogo-03.png" alt="logo" id="logo"></a></li>
+            </ul>
+            <ul>
+                <div class="w3-padding-48 w3-cream" style="height: 106px;">
+                    <li class="w3-margin-top w3-bar-item">
+                        <a href="who_we_are.html">WHO WE ARE</a>
+                    </li>
+                    <li class="w3-margin-top w3-bar-item" id="active">
+                        <a href="how_we_work.html">HOW WE WORK</a>
+                    </li>
+                    <li class="w3-margin-top w3-bar-item">
+                        <a href="what_we_offer.html">WHAT WE OFFER</a>
+                    </li>
+                    <li class="w3-margin-top w3-bar-item">
+                        <a href="why_us.html">WHY US</a>
+                    </li>
+                    <li class="w3-margin-top w3-bar-item">
+                        <a href="get_in_touch.html">GET IN TOUCH</a>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </nav>
+
+        <!--Nav small screens-->
+        <nav class="w3-hide-large" id="w3-top">
+            <div class="w3-bar w3-padding-24">
+                <div class="w3-display-container w3-padding-32">
+                    <a class="w3-display-left" id="link_arrow" href="index.html"><img src="image/ESAL_Arrow.png" alt=""></a>
+                    <a class="w3-display-middle" id="link_logo"><img src="image/ESALlogo-03.png" alt=""></a>
+                    <a class="w3-display-right" id="link_circles" onclick="showNav()"><img src="image/ESAL_Menu.png"></a>
+                    <a class="w3-display-right" id="link_cross" onclick="showNav()"><img src="image/ESA_Cross.png"></a>
+                </div>
+            </div>
+
+            <div class="w3-bar-block w3-xlarge" style="height: 100vh; display: none;" id="collapsible_nav">
+                <ul class="w3-padding-24">
+                    <li><a href="who_we_are.html" class="w3-bar-item w3-padding-16 w3-center w3-large">WHO WE ARE</a></li>
+                    <li><a href="how_we_work.html" class="w3-bar-item w3-padding-16 w3-center w3-large">HOW WE WORK</a></li>
+                    <li><a href="what_we_offer.html" class="w3-bar-item w3-padding-16 w3-center w3-large">WHAT WE OFFER</a></li>
+                    <li><a href="why_us.html" class="w3-bar-item w3-padding-16 w3-center w3-large">WHY US</a></li>
+                    <li><a href="get_in_touch.html" class="w3-bar-item w3-padding-16 w3-center w3-large">GET IN TOUCH</a></li>
+                    <li><a class="w3-bar-item w3-padding-16 w3-center"><img src="image/IMG_0708_2.PNG" alt="img" style="width: 200px;"></a></li>
+                </ul>
+            </div>
+        </nav>
+
+    <!--Row one-->
+    <!--Large Screens-->
+    <div class="w3-row w3-padding-64 w3-hide-medium w3-hide-small" style="margin-top: 140px">
+        <div class="w3-col l7 w3-left w3-padding-64 w3-animate-left" style="padding-left:12%; padding-right:10%;">
+            <p>
+                Encore simplifies the production process for fashion brands across the world. We play the role of a mediator between our clients and the apparel manufacturers in India, by managing everything from merchandising to logistics for our buyers.
+            </p>
+        </div>
+        <div class="w3-col l5 w3-animate-right">
+            <img src="image/IMG_0726_2.PNG" alt="" width="408px" height="222px" class="w3-image">
+        </div>
+    </div>
+    <!--Small Screens-->
+    <div class="w3-row w3-hide-large w3-center-80 w3-margin-top-120">
+        <h3>HOW WE WORK</h3>
+        <p class="w3-margin-top">Encore simplifies the production process for fashion brands across the world. We play the role of a mediator between our clients and the apparel manufacturers in India, by managing everything from merchandising to logistics for our buyers.
+        </p>
+    </div>
+
+        <!--Accordion-->
+        <div class="w3-container w3-hide-medium w3-hide-small">
+        <div class="w3-row" style="margin-left: 5%; margin-right: 5%; margin-top: -40px;">
+            <div class="w3-third tablinks w3-padding w3-center w3-col l4" onclick="changeTab(event, 'Merchandising')">
+                <h3 class="w3-padding-16 round-cursor">Merchandising</h3>
+                <img src="image/website-15.png" alt="" class="w3-image tabcontent" style="height: 390px; width: 360px;">
+            </div>
+            
+            <div class="w3-third tablinks w3-padding w3-center w3-col l4" onclick="changeTab(event, 'Quality')">
+                <h3 class="w3-padding-16 round-cursor">Quality Control</h3>
+                <img src="image/website-5.jpg" alt="" class="w3-image tabcontent" style="height: 390px; width: 360px;">
+            </div>
+            
+            <div class="w3-third tablinks w3-padding w3-center w3-col l4" onclick="changeTab(event, 'logistics')">
+                <h3 class="w3-padding-16 round-cursor">logistics</h3>
+                <img src="image/website-18.jpg" alt="" class="w3-image tabcontent" style="height: 390px; width: 360px;">
+            </div>
+        </div>
+        <!--Display:none-->
+        <div id="Merchandising" class="tabcontent w3-row w3-hide-medium w3-hide-small w3-padding-32" style="display:none; margin-left: -16px; margin-right: -32px;">
+            <img src="image/website-15.png" alt="" class="w3-image l6 m6 w3-col w3-animate-left" style="margin-left: -35px;">
+            <p class="l6 m9 w3-col w3-animate-right" style="margin-left: 8%; width: 36%;">We take care of all correspondence and protocol for sample development and production manufacturing through resolution oriented, fast and accurate responses.
+            <br><br>
+            Our local reach, leverage, and decades of experience provide us with an extensive network of product suppliers ensuring that we are able to continually cater to the varied needs of our customers.
+            <br>
+            Currently we represent garment suppliers / factories, who specialize in the areas of :
+            <br><br>
+            Woven, Circular & Flat Knitted Apparel
+            <br>
+            Hand-made products
+            <br>
+            Accessories, Embroidery & Surface ornamentation
+            <br>
+            Fabric & Garments Printing
+            <br>
+            pparel and Accessories in real Leather.
+            </p>
+        </div>
+                
+        <div id="Quality" class="tabcontent w3-row w3-hide-medium w3-hide-small w3-padding-32" style="display:none; margin-left: -16px; margin-right: -32px;">
+            <img src="image/website-5.jpg" alt="" class="w3-image w3-half w3-animate-left" style="margin-left: -35px;">
+            <p class="w3-half w3-col w3-animate-right" style="margin-left: 8%; width: 36%;">Our team is trained to follow AQL 1.5 up to 4.0
+            <br><br>
+            We know that a good product will distinguish itself from an ordinary one only on the merit of its quality. Having worked in Quality Assurance for a world leader in infant body suits where quality could never be compromised, we understand the importance of exceptional quality. As a service provider we aim to distinguish ourselves from other providers on the basis of our dedication to quality in the most practical way.
+            
+            </p> 
+        </div>
+                
+        <div id="logistics" class="tabcontent w3-row w3-hide-medium w3-hide-small w3-padding-32" style="display:none; margin-left: -16px; margin-right: -32px;">
+            <img src="image/website-18.jpg" alt="" class="w3-image w3-half w3-animate-left" style="margin-left: -35px;">
+            <p class="w3-half w3-col w3-animate-right" style="margin-left: 8%; width: 36%;">
+            Stringent ways are followed to avoid pilferage along the process of transaction of goods from factory to the buyer’s ware-house. Follow up until the documents / goods reach the buyer.
+            <br><br>
+            Shipping & logistical services include: 
+            <br><br>
+            Specific packaging of goods 
+            <br>
+            Appoint & Liaise with freight forwarding agencies 
+            <br>
+            Addressing Custom clearance formalities
+            <br>
+            Conforming to Export / Import rules & guidelines 
+            <br>
+            Handling all documentation for shipment of goods
+            <br>
+            Exploring the fastest cost-effective freight connections & couriers.
+            </p>
+        </div>
+        </div>
+
+
+    <!--Small Screens-->
+    <div class="w3-hide-large w3-center-80" style="padding-bottom: 40px;">
+        <div class="w3-display-container w3-section">
+            <img src="image/website-15.png" alt="" class="w3-image filter-brightness">
+            <h3 class="w3-display-middle w3-text-white">merchandising</h3>
+            <div class="w3-display-middle w3-display-hover w3-overlay w3-black w3-greyscale">
+            <p class="w3-margin w3-animate-opacity w3-text-white" style="font-size: 2vw;">
+                We take care of all correspondence and protocol for sample development and production manufacturing through resolution oriented, fast and accurate responses.
+                <br><br>
+                Our local reach, leverage, and decades of experience provide us with an extensive network of product suppliers ensuring that we are able to continually cater to the varied needs of our customers.
+                <br>
+                Currently we represent garment suppliers / factories, who specialize in the areas of :
+                <br> <br>
+                Woven, Circular & Flat Knitted Apparel
+                <br>
+                Hand-made products
+                <b>
+                Accessories, Embroidery & Surface ornamentation
+                <br>
+                Fabric & Garments Printing
+                <br>
+                Apparel and Accessories in real Leather.
+            </p>
+            </div>
+        </div>
+    
+        <div class="w3-auto w3-display-container w3-section">
+            <img src="image/website-5.jpg" alt="" class="w3-image filter-brightness">
+            <h3 class="w3-display-middle w3-text-white">Quality Control</h3>
+            <div class="w3-display-middle w3-display-hover w3-overlay w3-black w3-greyscale">
+            <p class="w3-margin w3-animate-opacity w3-text-white" style="font-size: 2vw;">
+                Our team is trained to follow AQL 1.5 up to 4.0 
+                <br><br>
+                We know that a good product will distinguish itself from an ordinary one only on the merit of its quality. Having worked in Quality Assurance for a world leader in infant body suits where quality could never be compromised, we understand the importance of exceptional quality. As a service provider we aim to distinguish ourselves from other providers on the basis of our dedication to quality in the most practical way.
+            </p>
+            </div>
+        </div>
+    
+        <div class="w3-auto w3-display-container w3-section">
+            <img src="image/website-18.jpg" alt="" class="w3-image filter-brightness">
+            <h3 class="w3-display-middle w3-text-white">Logistics</h3>
+            <div class="w3-display-middle w3-display-hover w3-overlay w3-black w3-greyscale">
+            <p class="w3-margin w3-animate-opacity w3-text-white" style="font-size: 2vw;">
+                Stringent ways are followed to avoid pilferage along the process of transaction of goods from factory to the buyer’s ware-house. Follow up until the documents / goods reach the buyer.
+                <br> <br>
+                Shipping & logistical services include:   
+                <br> <br>
+                Specific packaging of goods <br>
+                Appoint & Liaise with freight forwarding agencies <br>
+                Addressing Custom clearance formalities <br>
+                Conforming to Export / Import rules & guidelines <br>
+                Handling all documentation for shipment of goods <br>
+                Exploring the fastest cost-effective freight connections & couriers. <br>
+            </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="w3-animate-bottom w3-hide-medium w3-hide-small" style="margin-top: 80px;">
+        <div class="w3-row">
+            <div class="w3-half">
+                <div class="w3-margin-right">
+                    <div class="w3-center">
+                        <p class="w3-large">Interested in collaborating?</p>
+                        <p class="w3-xxlarge" style="text-decoration: underline;">Get in touch</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-half">
+                <div class="w3-margin-left">
+                    <div class="w3-center">
+                        <p class="w3-xxxlarge" style="margin-top: -20px;">encore</p>
+                        <p>sourcing agency limited</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+window.onload = function () {
+    document.getElementById("loader").style.display = 'none';
+    document.getElementById("loaded").classList -= 'w3-hide';
+}
+function changeTab(evt, tabName) {
+var i, tabcontent, tablinks;
+
+tabcontent = document.getElementsByClassName("tabcontent");
+for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+}
+tablinks = document.getElementsByClassName("tablinks");
+for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-bottombar", "");
+}
+document.getElementById(tabName).style.display = "block";
+evt.currentTarget.className += " w3-bottombar w3-border-black";
+}
+</script>
+</body>
+</html>
